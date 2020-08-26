@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <style>
+        img {
+          float: left;
+          margin-left: 15%;
+        }
+        </style>
+</head>
+<body style="text-align: center; background-color:lightblue ;">
+    <h1><u>Hangman Game</u></h1>
+    <p>Topic: Superhero Names</p>
+    <br>
+    <div id="one" >
+        <img id="home" style="float: none; margin-left:0%"src="imgs/home.png">
+        <br>
+        <button type="button" onclick="startGame()">Start</button>
+    </div>
+    <div id="two" style="display:none;">
+        <img id="hang" src="imgs/initial.png">
+        <br>
+        <p><b><u>Guess the Name:</u></b></p>
+        <br>
+        <p style="font-size: 40pt;"id ="word"> </p>
+        <label>Please enter a letter: </label><input id="guess">
+        <button type="button" onclick="check(document.getElementById('guess').value)">Submit</button>
+        <p id="msg" style="color: red;"></p>
+        <p id="msg2"></p>
+    </div>
+    <div id="three" style="display:none">
+        <img id="decision" src="imgs/6.png">
+        <br>
+        <br>
+        <br>
+        <p id="endGame"></p>
+        <button type="button" onclick="newGame()">New Game</button>
+    </div>
+    <script src = 'game.js'></script>
+</body>
+</html>

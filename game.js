@@ -132,5 +132,6 @@ function newGame(){
     uniqueletters= "";
     document.getElementById("hang").src="imgs/initial.png";
     document.getElementById("msg").innerHTML="";
+    document.getElementById("guess").value="";
     startGame();
 }
